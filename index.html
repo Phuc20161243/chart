@@ -1,0 +1,100 @@
+<!-- monitoring.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Đồ án tốt nghiệp</title>
+    <link rel="stylesheet" href="style-monitoring.css">
+</head>
+<body>
+    
+
+    <div id="time"> </div>
+    <div class="slave-box" id="slave2-box">
+        <h3 style="color: rgb(219, 20, 20);">Trạm 1</h3>
+        <div class="charts-row">
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="temperatureChart"></canvas>
+                
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="humidityChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="COChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <div class="chart-box">
+                    <canvas id="UVChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Slave 2 Container -->
+        <div class="slave-box" id="slave2-box">
+            <h3 style="color: rgb(219, 20, 20);">Trạm 2</h3>
+            
+          
+           <div class="charts-row">
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="Temperature2Chart"></canvas>
+                    
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="Humidity2Chart"></canvas>
+                    
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="DustChart"></canvas>
+                    
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="SoundChart"></canvas>
+                    
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="WindChart"></canvas>
+                    
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="RainChart"></canvas>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <canvas id="dataChart" width="400" height="200"></canvas>
+
+
+        
+        <script src="script.js"></script>
+</body>
+</html>
